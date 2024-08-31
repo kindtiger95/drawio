@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="0g4qHQ6darzbjiRX8Hh9-1" value="파트너스 어드민" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-1" value="LoadBalancer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="41" y="200" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0g4qHQ6darzbjiRX8Hh9-2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -13,7 +13,7 @@
             <mxPoint x="241" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0g4qHQ6darzbjiRX8Hh9-3" value="서버" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-3" value="nginx" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="265" y="200" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0g4qHQ6darzbjiRX8Hh9-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
@@ -28,7 +28,7 @@
             <mxPoint x="481" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0g4qHQ6darzbjiRX8Hh9-7" value="사이드킥 인스턴스" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-7" value="App Server" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="511" y="200" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0g4qHQ6darzbjiRX8Hh9-8" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
@@ -52,8 +52,23 @@
             <mxPoint x="414" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0g4qHQ6darzbjiRX8Hh9-14" value="ws" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="180" y="200" width="60" height="30" as="geometry" />
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-14" value="idle timeout: 60s" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="161" y="200" width="109" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-17" value="" style="endArrow=none;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="260" as="sourcePoint" />
+            <mxPoint x="220" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-19" value="" style="endArrow=none;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="260" as="sourcePoint" />
+            <mxPoint x="200" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0g4qHQ6darzbjiRX8Hh9-20" value="response at 61s" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="260" width="109" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

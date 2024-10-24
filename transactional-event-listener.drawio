@@ -1,9 +1,80 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.2">
   <diagram name="페이지-1" id="ILBTeA50URxpd8CFX5g5">
-    <mxGraphModel>
+    <mxGraphModel dx="2074" dy="1121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-4" value="시작" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="379" y="40" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-5" value="비즈니스 로직 수행" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="321" y="160" width="186" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="5kKl5Lmpw-ocknqd8EIQ-5" target="5kKl5Lmpw-ocknqd8EIQ-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="389" y="180" as="sourcePoint" />
+            <mxPoint x="439" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-8" value="끝" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="379" y="660" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-10" value="엔티티 객체 생성 및 저장" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="321" y="280" width="186" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-11" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="5kKl5Lmpw-ocknqd8EIQ-10" target="5kKl5Lmpw-ocknqd8EIQ-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="449" y="280" as="sourcePoint" />
+            <mxPoint x="449" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5kKl5Lmpw-ocknqd8EIQ-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-15" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5kKl5Lmpw-ocknqd8EIQ-14">
+          <mxGeometry x="-0.405" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-12" value="커밋 성공?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="364" y="390" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-13" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5kKl5Lmpw-ocknqd8EIQ-12" target="5kKl5Lmpw-ocknqd8EIQ-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="424" y="410" as="sourcePoint" />
+            <mxPoint x="424" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-17" value="다른 서비스 API 호출&lt;div&gt;--&amp;gt; 호출 받은 서비스에서 방금 커밋된 데이터를 SELECT 후 작업&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="321" y="550" width="186" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5kKl5Lmpw-ocknqd8EIQ-12" target="5kKl5Lmpw-ocknqd8EIQ-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="440" />
+              <mxPoint x="560" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-20" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5kKl5Lmpw-ocknqd8EIQ-19">
+          <mxGeometry x="-0.0563" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-22" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="413" y="660" as="sourcePoint" />
+            <mxPoint x="413" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-24" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FF3333;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="270" y="500" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="5kKl5Lmpw-ocknqd8EIQ-25" value="@TransactionalEventListener(AFTER_COMMIT)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#FF3333;" vertex="1" parent="1">
+          <mxGeometry x="290" y="610" width="260" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
